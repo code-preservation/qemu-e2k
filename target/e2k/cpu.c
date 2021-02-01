@@ -185,7 +185,7 @@ static void e2k_cpu_set_pc(CPUState *cs, vaddr value)
     cpu->env.ip = value;
 }
 
-static void e2k_cpu_synchronize_from_tb(CPUState *cs, TranslationBlock *tb)
+static void e2k_cpu_synchronize_from_tb(CPUState *cs, const TranslationBlock *tb)
 {
     E2KCPU *cpu = E2K_CPU(cs);
 
